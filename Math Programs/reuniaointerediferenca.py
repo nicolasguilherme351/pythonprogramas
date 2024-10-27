@@ -20,3 +20,6 @@ for i in g:
 print("Reunião entre a e b: ", a.union(b))
 print("a inter b: ", a.intersection(b))
 print("diferença entre a e b:", a.difference(b))
+
+# -- Nicolas Guilherme -- 
+# Programa que gera números aleatórios, organiza-os em dois conjuntos e calcula a união, interseção e diferença entre eles. Estou aplicando conhecimentos básicos de matemática para aprimorar minha compreensão sobre requisições em um banco de dados, como ao realizar um INNER JOIN entre duas tabelas.
