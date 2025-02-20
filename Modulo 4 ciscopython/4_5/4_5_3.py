@@ -18,13 +18,17 @@ def areatriangle(lado1, lado2, base, triangle):
         return a
     else:
         print("This is not triangle")
-        
-lado1 = int(input("Lado 1: "))
-lado2 = int(input("Lado 2: "))
-base = int(input("base: "))
+       
+lado1 = ''
+lado2 = ''
+base = ''
+while((lado1 == '') or (lado2 == '') or (base == '')):
+    lado1 = int(input("Lado 1: "))
+    lado2 = int(input("Lado 2: "))
+    base = int(input("base: "))
 
-if is_a_triangle(lado1, lado2, base):
-    print("This is a triangle.")
-    print("The triangle area:", areatriangle(lado1, lado2, base, triangle=True))
-else:
-    print("Is not triangle.")
+    if is_a_triangle(lado1, lado2, base):
+        print("This is a triangle.")
+        print("The triangle area:", areatriangle(lado1, lado2, base, triangle=True))
+    else:
+        print("Is not triangle.")

@@ -1,6 +1,6 @@
-print("Programa de ler, e fazer a soma de um arquivo feito pelo usuario")
+print("banana é  lega")
 
-print("Digite a quantidade de numeros que preferir: \n")
+print()
 listanumeros = []
 numeros = int(input("Digite a quantidade de numeros: "))
 nome = input("Digite o nome do seu arquivo: ")
