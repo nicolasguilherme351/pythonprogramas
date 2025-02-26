@@ -13,7 +13,7 @@ class Owner:
         self.address = address
         self.phone_number = contact_number 
          
-owner1 = Owner("Danny ", "122 Springfield Drive", "888-999")
+owner1 = Owner("Danny", "122 Springfield Drive", "888-999")
 dog1 = Dog("Bruce", "Scottich Terrifier", owner1) # This instaciate the object
 print(dog1.owner.name)
 
