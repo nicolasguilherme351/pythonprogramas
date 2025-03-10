@@ -1,18 +1,18 @@
-# Encapsulament
-# Acessin
-# Protected attributes
+# Getters and setters
 class User:
     def __init__(self, username, email, password):
         self.username = username
-        # self.email = email public
-        # self._email = email protected
-        self.__email = email # email private
+        self._email = email 
         self.password = password
-    def clean_email(self):
-        return self.__email.lower().strip()
+    def get_email(self): # allows you acess inaccessible data
+        return self._email
     
-user1 = User("Peter", "   Peter@gmail.com  ", "peter123")
+    def set_email(self, new_email):
+        if "@" in new_email:
+            self._email = new_email
+    
+user1 = User("Peter", "Peter@gmail.com", "peter123")
+print(user1.get_email())
 
-# print(user1.__email) Not works with private
-print(user1.clean_email())
-
+user1.set_email("dannyoutlook.com")
+print(user1.get_email())
